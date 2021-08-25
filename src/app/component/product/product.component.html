@@ -1,0 +1,124 @@
+
+ <!-- ***** Preloader Start ***** -->
+   <!-- <div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>   -->
+<!-- ***** Preloader End ***** -->
+
+
+<!-- Page Content -->
+<div class="page-heading products-heading header-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-content">
+          <h4>new arrivals</h4>
+          <h2>sixteen products</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="filters">
+          <ul>
+              <li class="active" data-filter="*">All Products</li>
+              <li data-filter=".des">Featured</li>
+              <li data-filter=".dev">Flash Deals</li>
+              <li data-filter=".gra">Last Minute</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="filters-content">
+            <div class="row grid">
+                <div *ngFor='let product of productsList;let i = index' class="col-lg-4 col-md-4 all des">
+                  <div class="product-item">
+                    <a href="#"><img src="{{product.imgUrl}}" alt=""></a>
+                    <div class="down-content">
+                      <a href="#"><h4>{{product.name}}</h4></a>
+                      <h6>{{product.price}}</h6>
+                      <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                      <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                      <span>Reviews (12)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                
+            </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <ul class="pages">
+          <li><a href="#">1</a></li>
+          <li class="active"><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="card-top container-fluid" style="position: fixed;">
+    <div class="container d-flex">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="item">
+                    <a href="">
+                        <img src="assets/images/one.jpeg" alt="">
+                        <h6 style="text-align: center;">All Products</h6>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="item">
+                    <a href="">
+                        <img src="assets/images/one.jpeg" alt="">
+                        <h6 style="text-align: center;">Electronics</h6>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="item">
+                    <a href="">
+                        <img src="assets/images/one.jpeg" alt="">
+                        <h6 style="text-align: center;">Jewellery</h6>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="item">
+                    <a href="">
+                        <img src="assets/images/one.jpeg" alt="">
+                        <h6 style="text-align: center;">Fashion</h6>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+</div> -->

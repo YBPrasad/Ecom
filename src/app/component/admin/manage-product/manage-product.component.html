@@ -1,0 +1,62 @@
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <h3 style="text-align: center;">Add New Product</h3>
+            <form action="">
+                <div class="form-group">
+                    <label for="">Product Name</label>
+                    <input type="text" class="form-control" name="p_name" [(ngModel)]="p_name" placeholder="Enter product name">
+                </div>
+                <div class="form-group">
+                    <label for="">Description</label>
+                    <input type="text" class="form-control" name="p_des" [(ngModel)]="p_des"  placeholder="Enter description">
+                </div>
+                <div class="form-group">
+                    <label for="">Price</label>
+                    <input type="text" class="form-control" name="p_price" [(ngModel)]="p_price"  placeholder="Enter price">
+                </div>
+                <div class="form-group">
+                    <label for="">upload product image</label>
+                    <input type="file" (change)="showPreview($event)" >
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-outline-primary" (click)="save()">Add</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-md-8">
+            <h2 style="text-align: center;">All Products</h2>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Reviews</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of productList;let i = index ">
+                    <td>{{i+1}}</td>
+                    <td>
+                        <img src="{{product.imgUrl}}" width="50px" alt="product Image">
+                    </td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.desciption}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.reviews}}</td>
+                    <td></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
